@@ -32,6 +32,11 @@ body {
   column-gap: 3.2rem;
 }
 
+.grid--4-col {
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3.2rem;
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -44,7 +49,7 @@ body {
   z-index: 10;
 }
 
-.nav-container {
+.header .nav-container {
   margin: 1.6rem auto;
   max-width: 140rem;
   height: 4.8rem;
@@ -53,13 +58,19 @@ body {
   justify-content: space-between;
 }
 
+.header .nav-container .logo-container a:link,
+.header .nav-container .logo-container a:visited {
+  display: inline-block;
+  text-decoration: none;
+}
+
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
   color: #e1ad01;
 }
 
-.nav ul {
+.header .nav ul {
   display: flex;
   align-items: center;
   list-style: none;
@@ -68,6 +79,7 @@ body {
 
 .nav a:link,
 .nav a:visited {
+  display: inline-block;
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 500;
@@ -119,6 +131,7 @@ body {
 /* BIO SECTION */
 .bio {
   width: 100%;
+  padding-top: 12rem;
 }
 
 .bio-container {
@@ -200,6 +213,23 @@ body {
 }
 
 .bio div .bio-container .bio-skills-tools .bio-tools ul li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #b0b0b0;
+}
+
+/* LOVES */
+.bio div .bio-container .bio-skills-tools .bio-loves h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.bio div .bio-container .bio-skills-tools .bio-loves ul {
+  list-style: none;
+}
+
+.bio div .bio-container .bio-skills-tools .bio-loves ul li {
   font-size: 1.6rem;
   line-height: 1.5;
   color: #b0b0b0;

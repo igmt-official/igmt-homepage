@@ -15,6 +15,15 @@ body {
 }
 
 /* GENERAL */
+*:focus {
+  display: flex;
+  align-items: center;
+  outline: none;
+  padding: 0.2rem;
+  border: 0.2rem solid #fff;
+  border-radius: 0.4rem;
+}
+
 .container {
   margin: 0 25vw;
   padding: calc(50vh - 5.5rem) 0 0;
@@ -147,6 +156,7 @@ body {
 
 .hero div div .details {
   font-size: 1.9rem;
+  line-height: 1.5;
   color: #b0b0b0;
 }
 
@@ -173,6 +183,7 @@ body {
   display: flex;
   list-style: none;
   gap: 1.6rem;
+  align-items: center;
 }
 
 .bio div .bio-container .bio-header a:link,

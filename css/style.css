@@ -47,6 +47,8 @@ body {
   width: 100%;
   top: 0;
   z-index: 10;
+  /* padding-bottom: 8rem; */
+  backdrop-filter: blur(1rem);
 }
 
 .header .nav-container {
@@ -57,6 +59,29 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
+/* .header .nav-container .nav-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  visibility: inherit;
+  opacity: 0.4375;
+}
+
+.header .nav-container .nav-bg div {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.4s ease-out;
+}
+
+.header .nav-container .nav-bg .nav-hidden {
+  background: linear-gradient(180deg, rgba(14, 18, 18), rgba(14, 18, 18, 0.1));
+  opacity: 1;
+} */
 
 .header .nav-container .logo-container a:link,
 .header .nav-container .logo-container a:visited {
@@ -94,7 +119,7 @@ body {
 
 /* HERO SECTION */
 .hero {
-  padding-top: 12rem;
+  padding-top: 20rem;
   width: 100%;
   height: 100vh;
 }
@@ -131,7 +156,7 @@ body {
 /* BIO SECTION */
 .bio {
   width: 100%;
-  padding-top: 12rem;
+  padding-top: 20rem;
 }
 
 .bio-container {

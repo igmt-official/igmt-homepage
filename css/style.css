@@ -9,6 +9,198 @@ html {
 }
 
 body {
-  font-family: "Roboto Mono", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  color: #fff;
   background-color: #000;
+}
+
+/* GENERAL */
+.container {
+  margin: 0 auto;
+  max-width: 140rem;
+  padding: 4.8rem 10rem;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--3-col {
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1.6rem;
+  column-gap: 3.2rem;
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-container {
+  margin: 1.6rem auto;
+  max-width: 140rem;
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e1ad01;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 5.4rem;
+}
+
+.nav a:link,
+.nav a:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.nav a:hover,
+.nav a:active {
+  color: #e1ad01;
+}
+
+/* HERO SECTION */
+.hero {
+  padding-top: 12rem;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero div div h1 {
+  font-size: 6.4rem;
+  letter-spacing: -0.3rem;
+}
+
+.hero div div h1 span {
+  color: #e1ad01;
+}
+
+.hero div div .subheading {
+  font-size: 1.9rem;
+  color: #b48a01;
+  margin-bottom: 1.6rem;
+}
+
+.hero div div .full-stack {
+  font-size: 9.6rem;
+  margin-bottom: -3.2rem;
+}
+
+.hero div div .development {
+  font-size: 9.6rem;
+}
+
+.hero div div .details {
+  font-size: 1.9rem;
+  color: #b0b0b0;
+}
+
+/* BIO SECTION */
+.bio {
+  width: 100%;
+}
+
+.bio-container {
+  display: grid;
+  row-gap: 4.8rem;
+}
+
+/* BIO HEADER */
+.bio div .bio-container .bio-header {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.bio div .bio-container .bio-header h1 {
+  font-size: 6.4rem;
+  font-weight: 700;
+  letter-spacing: -0.3rem;
+}
+
+.bio div .bio-container .bio-header ul {
+  display: flex;
+  list-style: none;
+  gap: 1.6rem;
+}
+
+.bio div .bio-container .bio-header a:link,
+.bio div .bio-container .bio-header a:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #b48a01;
+  transition: all 0.3s;
+}
+
+.bio div .bio-container .bio-header a:hover,
+.bio div .bio-container .bio-header a:active {
+  text-decoration: none;
+  color: #eee;
+}
+
+.bio div .bio-container .bio-header p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: #b48a01;
+}
+
+/* SKILLS AND TOOLS */
+.bio-skills-tools {
+  display: grid;
+  row-gap: 3.2rem;
+}
+
+/* SKILLS */
+.bio div .bio-container .bio-skills-tools .bio-skills h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.bio div .bio-container .bio-skills-tools .bio-skills ul {
+  list-style: none;
+}
+
+.bio div .bio-container .bio-skills-tools .bio-skills ul li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #b0b0b0;
+}
+
+/* TOOLS */
+.bio div .bio-container .bio-skills-tools .bio-tools h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.bio div .bio-container .bio-skills-tools .bio-tools ul {
+  list-style: none;
+}
+
+.bio div .bio-container .bio-skills-tools .bio-tools ul li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #b0b0b0;
 }

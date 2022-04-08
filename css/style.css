@@ -129,10 +129,14 @@ body {
 }
 
 /* HERO SECTION */
+.hero div .hero-textbox {
+  line-height: 1;
+}
 
 .hero div div h1 {
   font-size: 6.4rem;
   letter-spacing: -0.3rem;
+  margin-bottom: 1.6rem;
 }
 
 .hero div div h1 span {
@@ -147,7 +151,8 @@ body {
 
 .hero div div .full-stack {
   font-size: 9.6rem;
-  margin-bottom: -3.2rem;
+  margin-bottom: 1.6rem;
+  /* margin-bottom: -3.2rem; */
 }
 
 .hero div div .development {

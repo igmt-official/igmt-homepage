@@ -150,6 +150,8 @@ body {
 /* HERO SECTION */
 .hero div .hero-textbox {
   line-height: 1;
+  margin-right: -25vw;
+  padding-right: 3.2rem;
 }
 
 .hero div .hero-textbox .subheading {
@@ -176,9 +178,4 @@ body {
   font-size: 1.9rem;
   line-height: 1.5;
   color: #b0b0b0;
-}
-
-/* FOOTER */
-.footer {
-  font-size: 1.6rem;
 }

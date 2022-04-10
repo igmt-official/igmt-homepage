@@ -111,26 +111,40 @@ body {
   color: #e1ad01;
 }
 
-.header .nav ul {
+.header .nav-container .nav ul {
   display: flex;
   align-items: center;
   list-style: none;
   gap: 5.4rem;
 }
 
-.nav a:link,
-.nav a:visited {
+.header .nav-container .nav ul li a:link,
+.header .nav-container .nav ul li a:visited {
   display: inline-block;
+  position: relative;
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 500;
   color: #fff;
-  transition: all 0.3s;
 }
 
-.nav a:hover,
-.nav a:active {
-  color: #e1ad01;
+.header .nav-container .nav ul li a::after {
+  width: 100%;
+  content: "";
+  height: 0.1rem;
+  background-color: #e1ad01;
+  border-radius: 0.4rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.header .nav-container .nav ul li a:hover::after,
+.header .nav-container .nav ul li a:active::after {
+  transform: scaleX(1);
 }
 
 /* HERO SECTION */
@@ -138,26 +152,20 @@ body {
   line-height: 1;
 }
 
-.hero div div h1 {
-  font-size: 6.4rem;
-  letter-spacing: -0.3rem;
-  margin-bottom: 1.6rem;
-}
-
-.hero div div h1 span {
-  color: #e1ad01;
-}
-
-.hero div div .subheading {
+.hero div .hero-textbox .subheading {
   font-size: 1.9rem;
   color: #b48a01;
   margin-bottom: 1.6rem;
+  font-weight: 700;
 }
 
-.hero div div .full-stack {
+.hero div .hero-textbox .primary-heading {
   font-size: 9.6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #e1ad01;
   margin-bottom: 1.6rem;
-  /* margin-bottom: -3.2rem; */
+  letter-spacing: -0.3rem;
 }
 
 .hero div div .development {

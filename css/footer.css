@@ -20,7 +20,7 @@
 
 .footer div .footer-container .footer-header .resources-box {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 3.2rem;
 }
 
@@ -43,6 +43,48 @@
   font-size: 1.6rem;
   line-height: 1.6;
 }
+
+.footer
+  div
+  .footer-container
+  .footer-header
+  .resources-box
+  .resources-list
+  li
+  a:link,
+.footer
+  div
+  .footer-container
+  .footer-header
+  .resources-box
+  .resources-list
+  li
+  a:visited {
+  text-decoration: none;
+  color: #e1ad01;
+
+  transition: all 0.3s;
+}
+
+.footer
+  div
+  .footer-container
+  .footer-header
+  .resources-box
+  .resources-list
+  li
+  a:hover,
+.footer
+  div
+  .footer-container
+  .footer-header
+  .resources-box
+  .resources-list
+  li
+  a:active {
+  color: #eee;
+}
+
 .footer div .footer-container .footer-credits {
   display: flex;
   flex-direction: column;

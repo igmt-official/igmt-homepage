@@ -11,8 +11,16 @@
     margin-right: -6.4rem;
   }
 
+  .hero div .hero-textbox .primary-heading {
+    font-size: 5.6rem;
+  }
+
   .bio-container {
     margin-right: -6.4rem;
+  }
+
+  .bio div .bio-container .bio-header h1 {
+    font-size: 5.6rem;
   }
 
   .footer div .footer-container {
@@ -31,18 +39,6 @@
 
   .hero div .hero-textbox {
     margin-right: -3.2rem;
-  }
-
-  .hero div .hero-textbox .subheading {
-    font-size: 1.2rem;
-  }
-
-  .hero div .hero-textbox .primary-heading {
-    font-size: 5.4rem;
-  }
-
-  .hero div div .details {
-    font-size: 1.6rem;
   }
 
   .bio-container {

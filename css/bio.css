@@ -4,7 +4,6 @@
   flex-direction: column;
   gap: 4.8rem;
 
-  margin-right: -25vw;
   padding-right: 3.2rem;
 }
 
@@ -52,6 +51,7 @@
 .bio div .bio-container .bio-skills-tools {
   display: grid;
   row-gap: 3.2rem;
+  margin-right: -25vw;
 }
 
 /* SKILLS */

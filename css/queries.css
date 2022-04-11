@@ -90,7 +90,7 @@
 }
 
 /* Below 643px */
-@media (max-width: 40.19em) {
+@media (max-width: 40.2em) {
   .hero div .hero-textbox .primary-heading {
     font-size: 6.4rem;
   }

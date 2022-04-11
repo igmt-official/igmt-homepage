@@ -12,9 +12,6 @@ body {
   font-family: "Roboto Mono", monospace;
   color: #fff;
   background-color: #000;
-  background-image: radial-gradient(#b0b0b0 6px, transparent 6px);
-  background-size: 50rem 50rem;
-  backdrop-filter: blur(1.5rem);
 }
 
 /* GENERAL */
@@ -28,8 +25,10 @@ body {
 }
 
 .wrapper {
+  position: relative;
   min-height: 100vh;
   padding-bottom: 20vh;
+  transition: opacity 0.5s linear;
 }
 
 .container {
@@ -61,13 +60,14 @@ body {
 
 /* HEADER */
 .header {
-  position: fixed;
-  width: 100%;
   height: 12.8rem;
-  top: 0;
   z-index: 10;
   padding: 0 1.6rem 8rem;
   backdrop-filter: blur(1rem);
+
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .header .nav-container {
@@ -148,6 +148,24 @@ body {
 .header .nav-container .nav ul li a:hover::after,
 .header .nav-container .nav ul li a:active::after {
   transform: scaleX(1);
+}
+
+.header .nav-container .btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.header .nav-container .btn-mobile-nav .icon-mobile-nav {
+  color: #fff;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.header .nav-container .btn-mobile-nav .icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /* HERO SECTION */

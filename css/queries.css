@@ -91,6 +91,10 @@
   .header .nav-container .nav ul li a:visited {
     font-size: 4.8rem;
   }
+
+  .header .nav-container .nav ul li a::after {
+    transition: transform 0.5s ease;
+  }
 }
 
 /* Below 568px */

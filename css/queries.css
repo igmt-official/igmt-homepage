@@ -103,11 +103,6 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .header .nav-container .nav ul li a:link,
-  .header .nav-container .nav ul li a:visited {
-    font-size: 3.2rem;
-  }
-
   .hero div .hero-textbox {
     margin-right: -3.2rem;
   }
@@ -123,5 +118,12 @@
   .footer div .footer-container .footer-header .resources-box {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 3.2rem;
+  }
+}
+
+/* Below 390px */
+@media (max-width: 25em) {
+  html {
+    font-size: 50%;
   }
 }

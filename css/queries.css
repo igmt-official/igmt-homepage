@@ -89,6 +89,13 @@
   }
 }
 
+/* Below 643px */
+@media (max-width: 40.19em) {
+  .hero div .hero-textbox .primary-heading {
+    font-size: 5.4rem;
+  }
+}
+
 /* Below 568px */
 @media (max-width: 35.5em) {
   .container {

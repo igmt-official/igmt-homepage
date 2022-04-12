@@ -1,3 +1,4 @@
+// Mobile navigation
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const bodyEl = document.querySelector(".body");
 

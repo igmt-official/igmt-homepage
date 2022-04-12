@@ -156,6 +156,8 @@ body {
   cursor: pointer;
 
   opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   transition: all 1s linear;
 }
 

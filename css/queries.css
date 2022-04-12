@@ -29,9 +29,7 @@
   }
 
   .header .nav-container .btn-mobile-nav {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+    display: block;
   }
 
   .header .nav-container .nav ul {

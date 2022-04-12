@@ -11,7 +11,7 @@ html {
 body {
   font-family: "Roboto Mono", monospace;
   color: #fff;
-  background-color: #000;
+  background-color: #0e1212;
 }
 
 /* GENERAL */
@@ -155,10 +155,7 @@ body {
   background: none;
   cursor: pointer;
 
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: all 1s linear;
+  display: none;
 }
 
 .header .nav-container .btn-mobile-nav .icon-mobile-nav {
@@ -173,12 +170,13 @@ body {
 
 /* HERO SECTION */
 .hero {
-  animation: fadein 5s;
+  animation: fadeInLeft 3s ease-in-out;
 }
 
-@keyframes fadein {
+@keyframes fadeInLeft {
   from {
     opacity: 0;
+    transform: translateX(-300px);
   }
   to {
     opacity: 1;
@@ -196,6 +194,18 @@ body {
   color: #b48a01;
   margin-bottom: 1.6rem;
   font-weight: 700;
+
+  animation: fadeInBottom 2s ease-in-out;
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .hero div .hero-textbox .primary-heading {
@@ -205,6 +215,18 @@ body {
   color: #e1ad01;
   margin-bottom: 1.6rem;
   letter-spacing: -0.3rem;
+
+  animation: fadeInLeft 3s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .hero div div .development {
@@ -215,4 +237,16 @@ body {
   font-size: 1.9rem;
   line-height: 1.5;
   color: #b0b0b0;
+
+  animation: fadeInLeft 3s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+  }
 }

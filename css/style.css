@@ -172,6 +172,19 @@ body {
 }
 
 /* HERO SECTION */
+.hero {
+  animation: fadein 5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .hero div .hero-textbox {
   line-height: 1;
   margin-right: -25vw;

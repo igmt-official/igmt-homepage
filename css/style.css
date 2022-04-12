@@ -155,7 +155,8 @@ body {
   background: none;
   cursor: pointer;
 
-  display: none;
+  opacity: 0;
+  transition: all 1s linear;
 }
 
 .header .nav-container .btn-mobile-nav .icon-mobile-nav {

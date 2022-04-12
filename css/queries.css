@@ -130,7 +130,7 @@
 }
 
 /* Below 386px */
-@media (max-width: 24.13em) {
+@media (max-width: 26.4em) {
   .hero div .hero-textbox .subheading {
     font-size: 1.4rem;
   }

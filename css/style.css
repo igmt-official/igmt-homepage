@@ -12,6 +12,7 @@ body {
   font-family: "Roboto Mono", monospace;
   color: #fff;
   background-color: #0e1212;
+  min-height: 100vh;
 }
 
 /* GENERAL */

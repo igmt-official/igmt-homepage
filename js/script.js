@@ -21,9 +21,14 @@ allLinks.forEach(function (link) {
         behavior: "smooth",
       });
 
+    // Scroll to other
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
+
+    // Close mobile nav
+    if (link.classList.contains("nav-link"))
+      headerEl.classList.toggle("nav-open");
   });
 });

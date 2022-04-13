@@ -29,6 +29,6 @@ allLinks.forEach(function (link) {
 
     // Close mobile nav
     if (link.classList.contains("nav-link"))
-      headerEl.classList.toggle("nav-open");
+      bodyEl.classList.toggle("nav-open");
   });
 });
